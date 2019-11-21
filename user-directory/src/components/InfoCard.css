@@ -1,0 +1,40 @@
+.main-container {
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+ .main-container > h2 {
+    float: right;
+    width: 80px;
+    height: 40px;
+    font-size: 26px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 700;
+    height: 33px;
+    width: auto;
+    border-bottom: solid rgb(0, 183, 255) 2px;
+    clear: both;
+    float: left;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    float: left;
+}
+
+.subject {
+    font-weight: 700;
+    clear: left;
+}

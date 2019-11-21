@@ -1,0 +1,27 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+}
+
+.move {
+    background: transparent;
+    border: none;
+    color: white;
+    margin: 10px 0;
+    font-weight: 750;
+    font-size: 16px;
+}
+
+.change {
+    background-color: rgb(0, 183, 255);
+    border: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 750;
+    height: 25px;
+    border-radius: 10px;
+    height: 25px;
+    width: 60px;
+}
