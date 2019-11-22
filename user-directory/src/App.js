@@ -10,7 +10,8 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      id: 1
+      id: 1,
+      people: data
     }
 
     this.handleMoveClick = this.handleMoveClick.bind(this);
@@ -18,25 +19,9 @@ class App extends React.Component {
 
   handleMoveClick(str){
     if(str === 'next'){
-      if (this.state.id === 25){
-        this.setState({
-          id: 1
-        })
-      } else {
-        this.setState({
-          id: this.state.id + 1
-        })
-      }
+      this.state.id === 25 ? this.setState({id: 1}) : this.setState({id: this.state.id + 1});
     } else if(str === 'prev'){
-      if (this.state.id === 1){
-        this.setState({
-          id: 25
-        })
-      } else {
-        this.setState({
-          id: this.state.id - 1
-        })
-      }
+      this.state.id === 1 ? this.setState({id: 25}) : this.setState({id: this.state.id - 1});
     }
   }
 
@@ -48,7 +33,7 @@ class App extends React.Component {
         </header>
         <main>
           <InfoCard id={this.state.id} data={data}/>
-          <Toolbar id={this.state.id} moveClick={this.handleMoveClick}/>
+          <Toolbar id={this.state.id} moveClick={this.handleMoveClick} delete={this.handleDelete}/>
         </main>
       </div>
     );
